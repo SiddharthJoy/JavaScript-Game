@@ -9,3 +9,16 @@ const GAME_HEIGHT = 600;
 let paddle = new Paddle(GAME_WEIGHT, GAME_HEIGHT); 
 
 paddle.draw(ctx);
+
+let lastTime = 0;
+
+function gameLoop(timeStamp) {
+    let deltaTime = timeStamp - lastTime;
+    lastTime = timeStamp;
+    ctx.clearRect(0, 0, GAME_WEIGHT, GAME_HEIGHT);
+    paddle.update(deltaTime);
+    paddle.draw(ctx);
+    requestAnimationFrame(gameLoop);
+}
+
+gameLoop();
