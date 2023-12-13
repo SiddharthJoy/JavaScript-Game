@@ -7,10 +7,14 @@
       #gameScreen {
         border: 100 px solid rgb(0, 225, 255);
       }
+      #ball_img {
+        display: none;
+      }
     </style>
   </head>
 
   <body>
+    <img id = "ball_img" src = "src/assets/ball.png">
     <canvas id="gameScreen" width="800px" height="600px"></canvas>
     <div id="app"></div>
     <h1> Simple Javascript Game </h1>
@@ -18,6 +22,6 @@
     <script src="src/index.js" type="module"></script>
     <script src="src/paddle.js" type="module"></script>
     <script src="src/input.js" type="module"></script>
-
+    <script src="src/ball.js" type="module"></script>
   </body>
 </html>
