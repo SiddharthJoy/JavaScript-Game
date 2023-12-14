@@ -4,7 +4,7 @@ export default class Ball {
             x: 10,
             y: 10
         }
-        this.size = 20
+        this.size = 10
         this.image = document.getElementById("ball_img");
         this.direction = {
             x: 1,
