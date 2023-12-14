@@ -14,8 +14,8 @@ export default class Ball {
             y: 1
         }
         this.speed = {
-            x: 10,
-            y: 10
+            x: 5,
+            y: 5
         }
         this.gameHeight = gameHeight;
         this.gameWeight = gameWeight;

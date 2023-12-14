@@ -24,9 +24,8 @@ export default class Paddle {
         ctx.fillRect(this.position.x, this.position.y, this.width, this.height); 
     }
 
-    update(deltaTime) {
-        if(!deltaTime) return;
-        this.position.x += 50 / deltaTime * this.direction;
+    update() {
+        this.position.x += 10 * this.direction;
         this.position.x = Math.max(0, this.position.x);
         this.position.x = Math.min(800 - 150, this.position.x);
         console.log(this.direction);
