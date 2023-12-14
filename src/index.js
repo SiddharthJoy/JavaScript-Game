@@ -22,6 +22,7 @@ function gameLoop(timeStamp) {
     let deltaTime = timeStamp - lastTime;
     lastTime = timeStamp;
     ctx.clearRect(0, 0, GAME_WEIGHT, GAME_HEIGHT);
+    ctx.drawImage(document.getElementById("bg_img"), 0, 0, GAME_WEIGHT, GAME_HEIGHT);
     paddle.update(deltaTime);
     paddle.draw(ctx);
     ball.draw(ctx);

@@ -27,8 +27,8 @@ export default class Paddle {
     update(deltaTime) {
         if(!deltaTime) return;
         this.position.x += 50 / deltaTime * this.direction;
-        this.position.x = Math.max(0,this.position.x);
-        this.position.x = Math.min(600,this.position.x);
+        this.position.x = Math.max(0, this.position.x);
+        this.position.x = Math.min(800 - 150, this.position.x);
         console.log(this.direction);
     }
 }
