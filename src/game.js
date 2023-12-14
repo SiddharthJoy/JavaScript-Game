@@ -10,7 +10,7 @@ export default class Game {
 
     start() {
         this.paddle = new Paddle(this.gameWidth, this.gameHeight);
-        this.ball = new Ball(this.gameWidth, this.gameHeight);
+        this.ball = new Ball(this.gameWidth, this.gameHeight, this);
         this.gameObjects = [this.paddle, this.ball];
         new inputHandler(this.paddle);
     }
