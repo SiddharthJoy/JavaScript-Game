@@ -20,7 +20,7 @@ export default class Paddle {
 
 
     draw(ctx) {
-        ctx.fillStyle = '#0f0'
+        ctx.fillStyle = '#30eaff'
         ctx.fillRect(this.position.x, this.position.y, this.width, this.height); 
     }
 
