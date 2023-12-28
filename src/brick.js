@@ -2,8 +2,8 @@ export default class Brick {
     constructor(game, position) {
         this.game = game;
         this.image = document.getElementById("brick_img");
-        this.height = 30;
-        this.weight = 55;
+        this.height = 25;
+        this.weight = 80;
         this.position = position;
     }
 
