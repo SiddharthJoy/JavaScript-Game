@@ -24,6 +24,7 @@ export default class Ball {
     }
 
     update() {
+        // logic to detect gameScreen-ball collision
         console.log(this.game.paddle.width);
         this.position.x += this.direction.x * this.speed.x;
         this.position.y += this.direction.y * this.speed.y;
