@@ -1,8 +1,8 @@
 export default class Ball {
     constructor(gameWeight, gameHeight, game) {
         this.position = {
-            x: 10,
-            y: 10
+            x: game.paddle.position.x,
+            y: game.paddle.position.y - game.paddle.height
         }
         this.size = 20
         this.image = document.getElementById("ball_img");
