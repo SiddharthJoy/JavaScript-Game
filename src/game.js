@@ -28,5 +28,7 @@ export default class Game {
         this.gameObjects.forEach(element => {
             element.update();
         });
+
+        this.gameObjects = this.gameObjects.filter(object => !object.markForDeletion);
     }
 }
